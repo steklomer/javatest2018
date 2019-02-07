@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class PrimeNum {
   
   public static void main(String args[]) {
-    System.out.println("Введите положительное число:");
+    System.out.println("Enter positive number:");
     Scanner in = new Scanner(System.in);
     int maxNum = in.nextInt();
-    System.out.println("Результат:");
+    System.out.println("Result:");
     for (int i = 1; i <= maxNum; i++) {
       if (isPrime(i)) {          
         System.out.println(i);

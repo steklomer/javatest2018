@@ -3,7 +3,7 @@ import java.util.*;
 public class Palindrome {
   
   public static void main(String args[]) {
-    System.out.println("Введите слово:");
+    System.out.println("Enter word:");
     Scanner in = new Scanner(System.in);
     String sWord = in.next();
     int len = sWord.length();
@@ -13,9 +13,9 @@ public class Palindrome {
       cArr[i] = sWord.charAt(i);
       revArr[i] = sWord.charAt(len - 1 - i);
     }
-    //System.out.println("Массив: " + Arrays.toString(cArr));
-    //System.out.println("Обратный массив: " + Arrays.toString(revArr));
-    System.out.println("Палиндром: " + Boolean.toString(Arrays.equals(cArr, revArr)));
+    //System.out.println("Array: " + Arrays.toString(cArr));
+    //System.out.println("Reversed array: " + Arrays.toString(revArr));
+    System.out.println("Is palindrome? " + Boolean.toString(Arrays.equals(cArr, revArr)));
   }
   
   //public static char[] reverse(char[] inArr){
